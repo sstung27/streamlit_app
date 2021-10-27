@@ -59,8 +59,8 @@ def MNIST():
         # image[2:26,2:26] = image2
         # st.image(image)
 
-        scaled_img, prediction = Testing(image)
-        st.image(scaled_img)
+#         scaled_img, prediction = Testing(image)
+#         st.image(scaled_img)
 #         pred = prediction.sort(descending=True)
 #         precision1 = "Number "+str(np.array(pred.indices[0][0]))+" is "+str(np.array(pred.values[0][0]))
 #         precision2 = "Number " + str(np.array(pred.indices[0][1])) + " is " + str(np.array(pred.values[0][1]))
