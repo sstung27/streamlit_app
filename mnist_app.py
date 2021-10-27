@@ -51,26 +51,26 @@ def MNIST():
 
     # Do something interesting with the image data and paths
     if canvas_result.image_data is not None:
-        st.image(canvas_result.image_data[:,:,1])
-#         image = np.array(canvas_result.image_data[:, :, 1] / 255).astype('float32')
+#         st.image(canvas_result.image_data[:,:,1])
+        image = np.array(canvas_result.image_data[:, :, 1] / 255).astype('float32')
 
         # image2 = cv2.resize(image, (24, 24))
         # image = np.zeros((28, 28)).astype('float32')
         # image[2:26,2:26] = image2
         # st.image(image)
 
-#         scaled_img, prediction = Testing(image)
-#         st.image(scaled_img)
-#         pred = prediction.sort(descending=True)
-#         precision1 = "Number "+str(np.array(pred.indices[0][0]))+" is "+str(np.array(pred.values[0][0]))
-#         precision2 = "Number " + str(np.array(pred.indices[0][1])) + " is " + str(np.array(pred.values[0][1]))
-#         precision3 = "Number " + str(np.array(pred.indices[0][2])) + " is " + str(np.array(pred.values[0][2]))
-#         new_title1 = f'<p style="font-family:sans-serif; color:Green; font-size: 42px;">{precision1}</p>'
-#         new_title2 = f'<p style="font-family:sans-serif; color:Green; font-size: 42px;">{precision2}</p>'
-#         new_title3 = f'<p style="font-family:sans-serif; color:Green; font-size: 42px;">{precision3}</p>'
-#         st.markdown(new_title1, unsafe_allow_html=True)
-#         st.markdown(new_title2, unsafe_allow_html=True)
-#         st.markdown(new_title3, unsafe_allow_html=True)
+        scaled_img, prediction = Testing(image)
+        st.image(scaled_img)
+        pred = prediction.sort(descending=True)
+        precision1 = "Number "+str(np.array(pred.indices[0][0]))+" is "+str(np.array(pred.values[0][0]))
+        precision2 = "Number " + str(np.array(pred.indices[0][1])) + " is " + str(np.array(pred.values[0][1]))
+        precision3 = "Number " + str(np.array(pred.indices[0][2])) + " is " + str(np.array(pred.values[0][2]))
+        new_title1 = f'<p style="font-family:sans-serif; color:Green; font-size: 42px;">{precision1}</p>'
+        new_title2 = f'<p style="font-family:sans-serif; color:Green; font-size: 42px;">{precision2}</p>'
+        new_title3 = f'<p style="font-family:sans-serif; color:Green; font-size: 42px;">{precision3}</p>'
+        st.markdown(new_title1, unsafe_allow_html=True)
+        st.markdown(new_title2, unsafe_allow_html=True)
+        st.markdown(new_title3, unsafe_allow_html=True)
 
 
 def get_image_download_link(img):
