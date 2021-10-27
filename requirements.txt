@@ -7,4 +7,4 @@ torchvision==0.4.1
 torchviz==0.0.1
 matplotlib==3.1.1
 tifffile==2020.10.1
-streamlit-drawable-canvas==0.79.0
+streamlit-drawable-canvas==0.80.0
