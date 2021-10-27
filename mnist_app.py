@@ -38,12 +38,12 @@ def MNIST():
     # realtime_update = st.sidebar.checkbox("Update in realtime", True)
     canvas_result = st_canvas(
         fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
-        stroke_width=6,
+        stroke_width=int(6),
         stroke_color="#FFFFFF",
         background_color="#000000",
         update_streamlit=False,
-        height=100,
-        width=100,
+        height=int(100),
+        width=int(100),
         drawing_mode="freedraw",
         display_toolbar=True,
 #         key="full_app",
