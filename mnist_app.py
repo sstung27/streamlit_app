@@ -46,7 +46,7 @@ def MNIST():
         width=100,
         drawing_mode="freedraw",
         display_toolbar=True,
-        key="full_app",
+#         key="full_app",
     )
 
     # Do something interesting with the image data and paths
