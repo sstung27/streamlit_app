@@ -37,7 +37,7 @@ def MNIST():
     # stroke_width = st.sidebar.slider("Stroke width: ", 1, 25, 3)
     # realtime_update = st.sidebar.checkbox("Update in realtime", True)
     canvas_result = st_canvas(
-#         fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
+        fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
         stroke_width=int(6),
         stroke_color="#FFFFFF",
         background_color="#000000",
