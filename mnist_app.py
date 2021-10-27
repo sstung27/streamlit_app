@@ -51,7 +51,7 @@ def MNIST():
 
     # Do something interesting with the image data and paths
     if canvas_result.image_data is not None:
-        # st.image(canvas_result.image_data[:,:,1])
+        st.image(canvas_result.image_data[:,:,1])
 #         image = np.array(canvas_result.image_data[:, :, 1] / 255).astype('float32')
 
         # image2 = cv2.resize(image, (24, 24))
