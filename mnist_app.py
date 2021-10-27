@@ -30,7 +30,7 @@ def MNIST():
     # st.sidebar.header("Configuration")
     st.write("The is a three-layer fully-connected network and the weights are trained from unrectified method. "
              "The training dataset is the MNIST dataset, as shown below. The training accuracy is 0.9912 and testing accuracy is 0.9773")
-    st.image(Image.open('mnist.jpeg'), width=300)
+#     st.image(Image.open('mnist.jpeg'), width=300)
     st.write('draw a digit then classification')
 
     # Specify canvas parameters in application
