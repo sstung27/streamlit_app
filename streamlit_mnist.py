@@ -34,11 +34,11 @@ def preprocess(image):
     h = bottom - top + 1
     w = right - left + 1
     if h > w:
-        h1 = 20
-        w1 = int(w * 20 / h)
+        h1 = 18
+        w1 = int(w * 18 / h)
     else:
-        w1 = 20
-        h1 = int(h * 20 / w)
+        w1 = 18
+        h1 = int(h * 18 / w)
     image2 = cv2.resize(image1, (w1, h1))
     ini_x = int((28 - h1) / 2)
     ini_y = int((28 - w1) / 2)
