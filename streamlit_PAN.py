@@ -79,8 +79,8 @@ def reconImg(arrayClear, block_numM, block_numN, block_size, block_extend, h, w,
     return img
 
 
-# device = torch.device("cpu")
-device = torch.device("cuda:0")
+device = torch.device("cpu")
+# device = torch.device("cuda:0")
 def doing_fusion_PAN(image1, image2):
     fuse_scheme = 0
     if fuse_scheme == 0:
