@@ -137,9 +137,9 @@ def FUSION():
             image1 = Image.open(file_up1)
             image1 = np.array(image1)/255
 
-        # if image1.shape[0] > 3000 or image1.shape[1] > 3000:
-        #     st.session_state.pop('key')
-        #     st.experimental_rerun()
+        if image1.shape[0] > 3000 or image1.shape[1] > 3000:
+            st.session_state.pop('key')
+            st.experimental_rerun()
 
         image1 = image1.astype('float32')
         st.write("image size:", image1.shape, "dtype:", image1.dtype, "file type：", str(tail1))
@@ -159,9 +159,9 @@ def FUSION():
             image2 = Image.open(file_up2)
             image2 = np.array(image2) / 255
 
-        # if image2.shape[0] > 3000 or image2.shape[1] > 3000:
-        #     st.session_state.pop('key')
-        #     st.experimental_rerun()
+        if image2.shape[0] > 3000 or image2.shape[1] > 3000:
+            st.session_state.pop('key')
+            st.experimental_rerun()
 
         image2 = image2.astype('float32')
         st.write("image size:", image2.shape, "dtype:", image2.dtype, "file type：", str(tail2))
