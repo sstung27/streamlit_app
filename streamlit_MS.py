@@ -100,7 +100,7 @@ def doing_fusion(image1, image2):
     # load pretrained model
     sigma = 0.02
     model = myIFCNN(fuse_scheme=fuse_scheme)
-    model.load_state_dict(torch.load('sigma' + str(sigma) + '_epoch500.pth'))
+    model.load_state_dict(torch.load('sigma' + str(sigma) + '_epoch500cpu.pth'))
     # model.load_state_dict(torch.load(r'D:\nspoDNN\venv\IFCNN\Code\snapshots\IFCNN-MAX.pth'))
     model.eval()
     model = model.to(device)
